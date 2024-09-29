@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Library xmlns="http://hl7.org/fhir">
+    <id value="WADAListS2" />
+    <version value="0.1.0" />
+    <name value="WADAListS2" />
+    <title value="WADA List S2" />
+    <status value="active" />
+    <experimental value="true" />
+    <type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/library-type" />
+            <code value="logic-library" />
+        </coding>
+    </type>
+    <description value="Library for group S2 of the List" />
+    <content id="ig-loader-WADAListS2.cql" />
+</Library>

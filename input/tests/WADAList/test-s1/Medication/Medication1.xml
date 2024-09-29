@@ -1,0 +1,10 @@
+<Medication xmlns="http://hl7.org/fhir">
+    <code>
+        <coding>
+            <system value="http://legemiddelverket.no/FEST/LegemiddelMerkevareID" />
+            <code value="ID_F37082E9-651A-4E72-A72D-37DEFEA560AF" />
+            <display value="Intrarosa vagitorie 6,5 mg" />
+        </coding>
+        <text value="Intrarosa vagitorie 6,5 mg" />
+    </code>
+</Medication>

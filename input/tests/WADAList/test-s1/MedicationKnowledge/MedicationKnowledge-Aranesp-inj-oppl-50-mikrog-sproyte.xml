@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationKnowledge xmlns="http://hl7.org/fhir">
+    <id value="ID-B22FCF5F-1B95-4B7F-9E7D-8BA5A265974D"/>
+    <code>
+        <coding>
+            <system value="http://legemiddelverket.no/FEST/LegemiddelMerkevareID" />
+            <code value="ID_B22FCF5F-1B95-4B7F-9E7D-8BA5A265974D" />
+            <display value="Aranesp inj, oppl 50 mikrog/sprøyte" />
+        </coding>
+        <text value="Aranesp inj, oppl 50 mikrog/sprøyte" />
+    </code>
+    <ingredient>
+        <itemCodeableConcept>
+            <coding>
+                <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+                <code value="ID_0CF89765-A38A-4D76-89DC-A9D9630B9BFF" />
+                <display value="Darbepoetin alfa" />
+            </coding>
+        </itemCodeableConcept>
+    </ingredient>
+</MedicationKnowledge>

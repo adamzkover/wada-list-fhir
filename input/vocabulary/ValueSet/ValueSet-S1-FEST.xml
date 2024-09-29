@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="S1-FEST" />
+    <url value="https://folk.ntnu.no/adamzk/it6103/ValueSet/S1-FEST" />
+    <name value="S1Fest" />
+    <title value="S1 FEST" />
+    <status value="draft" />
+    <experimental value="true" />
+    <description value="FEST codes for substances included in section S1 of the List." />
+    <expansion>
+        <timestamp value="2024-07-18" />
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_FF68A209-DF41-4647-A725-F034A8F0C5CC" />
+            <display value="Prasteron" />
+        </contains>
+    </expansion>
+</ValueSet>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="FEST-Virkestoff" />
+    <url value="http://legemiddelverket.no/FEST/VirkestoffID" />
+    <name value="FestVirkestoff" />
+    <title value="FEST Virkestoff" />
+    <status value="draft" />
+    <experimental value="true" />
+    <description value="Codes for active substances (Virkestoff) defined in FEST." />
+    <content value="complete" />
+    <caseSensitive value="true" />
+    <concept>
+        <code value="ID_433FABF6-968F-43D2-BF5E-CDC5546F0AB2" />
+        <designation>
+            <language value="no" />
+            <value value="Acetylsalisylsyre" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_0CF89765-A38A-4D76-89DC-A9D9630B9BFF" />
+        <designation>
+            <language value="no" />
+            <value value="Darbepoetin alfa" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_FF68A209-DF41-4647-A725-F034A8F0C5CC" />
+        <designation>
+            <language value="no" />
+            <value value="Prasteron" />
+        </designation>
+    </concept>
+</CodeSystem>

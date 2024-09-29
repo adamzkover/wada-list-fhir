@@ -1,0 +1,6 @@
+hapi/h2
+input/tests/results/*.txt
+input-cache
+output
+temp
+template
