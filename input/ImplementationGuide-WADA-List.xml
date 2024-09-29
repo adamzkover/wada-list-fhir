@@ -21,6 +21,11 @@
                 <generation value="markdown" />
             </page>
             <page>
+                <nameUrl value="references.html" />
+                <title value="References" />
+                <generation value="markdown" />
+            </page>
+            <page>
                 <nameUrl value="acknowledgements.html" />
                 <title value="Acknowledgements" />
                 <generation value="markdown" />
