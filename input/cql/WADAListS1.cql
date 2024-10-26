@@ -8,5 +8,4 @@ valueset S1Vs: 'https://folk.ntnu.no/adamzk/it6103/ValueSet/S1-FEST'
 
 define function GetCard(Meds List<FHIR.Medication>):
   WADAListCommon.GetCard(Meds, S1Vs,
-    'S1. Anabole stoffer',
-    's1')
+    'S1. Anabole stoffer', 's1', 'red')

@@ -8,13 +8,12 @@ include WADAListS2 version '0.1.0' called WADAListS2
 context Patient
 
 define function CardDetails(Card Tuple {
-  "Tittel" String, "Kategori" String, "Match" Boolean, "MedicationKnowledges" List<FHIR.MedicationKnowledge>}):
-  'Medisiner: ' &
-  Combine((
-    Card."MedicationKnowledges" MK
-    return MK.code.text.value
-    ), '; '
-  )
+    "Tittel" String,
+    "Kategori" String,
+    "Match" Boolean,
+    "MedicationKnowledges" List<FHIR.MedicationKnowledge>,
+    "Message" String}):
+  'Medisiner: ' & Card.Message
 
 define Meds:
   [Medication] M
