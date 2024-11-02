@@ -8,4 +8,4 @@ valueset S2Vs: 'https://folk.ntnu.no/adamzk/it6103/ValueSet/S2-FEST'
 
 define function GetCard(Meds List<FHIR.Medication>):
   WADAListCommon.GetCard(Meds, S2Vs,
-    'S2. Peptidhormoner, vekstfaktorer, relaterte stoffer og mimetika', 's2', 'red')
+    's2', 'red')

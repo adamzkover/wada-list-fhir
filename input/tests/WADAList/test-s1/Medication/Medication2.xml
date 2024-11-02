@@ -1,0 +1,11 @@
+<Medication xmlns="http://hl7.org/fhir">
+    <id value="Med2" />
+    <code>
+        <coding>
+            <system value="http://legemiddelverket.no/FEST/LegemiddelMerkevareID" />
+            <code value="ID_B22FCF5F-1B95-4B7F-9E7D-8BA5A265974D" />
+            <display value="Aranesp inj, oppl 50 mikrog/sprøyte" />
+        </coding>
+        <text value="Aranesp inj, oppl 50 mikrog/sprøyte" />
+    </code>
+</Medication>

@@ -7,31 +7,19 @@ include WADAListS2 version '0.1.0' called WADAListS2
 
 context Patient
 
-define function CardDetails(Card Tuple {
-    "Tittel" String,
-    "Kategori" String,
-    "Match" Boolean,
-    "MedicationKnowledges" List<FHIR.MedicationKnowledge>,
-    "Message" String}):
-  'Medisiner: ' & Card.Message
-
-define Meds:
+define private Meds:
   [Medication] M
   return M
 
-define public Cards:
-  Tuple {
-    S1: WADAListS1.GetCard(Meds),
-    S2: WADAListS2.GetCard(Meds)
-  }
+define private Cards:
+  ({
+    WADAListS1.GetCard(Meds),
+    WADAListS2.GetCard(Meds)
+  }) C where C != ''
+  return C
 
-define S1Match:
-  "Cards"."S1"."Match"
-define S2Match:
-  "Cards"."S2"."Match"
+define public HasMatch:
+  Count(Cards) > 0
 
-define S1MatchingMedicationNames:
-  CardDetails("Cards"."S1")
-
-define S2MatchingMedicationNames:
-  CardDetails("Cards"."S2")
+define public MatchingIngredientDetails:
+  Combine(Cards, '; ')

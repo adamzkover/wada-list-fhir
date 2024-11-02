@@ -1,4 +1,5 @@
 <Medication xmlns="http://hl7.org/fhir">
+    <id value="Med1" />
     <code>
         <coding>
             <system value="http://legemiddelverket.no/FEST/LegemiddelMerkevareID" />

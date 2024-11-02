@@ -21,7 +21,7 @@
     <date value="2024-09-28" />
     <library value="https://folk.ntnu.no/adamzk/it6103/Library/WADAList|0.1.0" />
     <action>
-        <title value="S1. Anabole stoffer. Forbudt til enhver tid (i og utenfor konkurranse)." />
+        <title value="WADAs dopingliste" />
         <trigger>
             <type value="named-event" />
             <name value="patient-view" />
@@ -30,36 +30,14 @@
             <kind value="applicability" />
             <expression>
                 <language value="text/cql-identifier" />
-                <expression value="S1Match" />
+                <expression value="HasMatch" />
             </expression>
         </condition>
         <dynamicValue>
             <path value="action.description"/>
             <expression>
                 <language value="text/cql.identifier"/>
-                <expression value="S1MatchingMedicationNames"/>
-            </expression>
-        </dynamicValue>
-    </action>
-    <action>
-        <title value="S2. Peptidhormoner, vekstfaktorer, relaterte stoffer og mimetika" />
-        <description value="S2. Forbudt til enhver tid (i og utenfor konkurranse)" />
-        <trigger>
-            <type value="named-event" />
-            <name value="patient-view" />
-        </trigger>
-        <condition>
-            <kind value="applicability" />
-            <expression>
-                <language value="text/cql-identifier" />
-                <expression value="S2Match" />
-            </expression>
-        </condition>
-        <dynamicValue>
-            <path value="action.description"/>
-            <expression>
-                <language value="text/cql.identifier"/>
-                <expression value="S2MatchingMedicationNames"/>
+                <expression value="MatchingIngredientDetails"/>
             </expression>
         </dynamicValue>
     </action>

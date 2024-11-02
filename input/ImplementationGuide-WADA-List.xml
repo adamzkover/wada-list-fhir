@@ -21,6 +21,16 @@
                 <generation value="markdown" />
             </page>
             <page>
+                <nameUrl value="implementation.html" />
+                <title value="Implementation" />
+                <generation value="markdown" />
+            </page>
+            <page>
+                <nameUrl value="terminology.html" />
+                <title value="Terminology" />
+                <generation value="markdown" />
+            </page>
+            <page>
                 <nameUrl value="references.html" />
                 <title value="References" />
                 <generation value="markdown" />

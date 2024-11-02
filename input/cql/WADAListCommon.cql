@@ -15,7 +15,7 @@ define function GetMatchingMedKnowledges(VS System.ValueSet, MedicationCodes Lis
   where MK.ingredient.item.coding in VS and (Count(MK.code.coding intersect MedicationCodes) > 0)
   return MK
 
-define function GetMatchingIngredients(MK MedicationKnowledge, VS System.ValueSet, Severity System.String):
+define function GetMatchingIngredients(MK MedicationKnowledge, VS System.ValueSet, Kategori System.String, Severity System.String):
   MK.code.text + ': ' +
   Combine(
     MK.ingredient Ing
@@ -24,24 +24,18 @@ define function GetMatchingIngredients(MK MedicationKnowledge, VS System.ValueSe
   ) + ': ' + (
     case
       when Severity = 'red' then 'forbudt iht. WADAs dopingliste'
-      when Severity = 'yellow' then 'forbudt iht. WADAs dopingliste, med visse unntak​/​restriksjoner'
+      when Severity = 'yellow' then 'forbudt iht. WADAs dopingliste, med visse unntak/restriksjoner'
       else 'Ukjent'
     end
-  )
+  ) + ' (' + Kategori + ')'
 
-define function GetMatchingIngredientsForList(MKList List<MedicationKnowledge>, VS System.ValueSet, Severity System.String):
+define function GetMatchingIngredientsForList(MKList List<MedicationKnowledge>, VS System.ValueSet, Kategori System.String, Severity System.String):
   Combine(
     (MKList MK
-    return GetMatchingIngredients(MK, VS, Severity)), '; '
+    return GetMatchingIngredients(MK, VS, Kategori, Severity)), '; '
   )
 
 define function GetCard(
     Medications List<FHIR.Medication>, VS System.ValueSet,
-    Tittel String, Kategori String, Severity String):
-    {
-        "Tittel": Tittel,
-        "Kategori": Kategori,
-        "Match": (Count(GetMatchingMedKnowledges(VS, GetMedicationCodings(Medications))) > 0),
-        "MedicationKnowledges": GetMatchingMedKnowledges(VS, GetMedicationCodings(Medications)),
-        "Message": GetMatchingIngredientsForList(GetMatchingMedKnowledges(VS, GetMedicationCodings(Medications)), VS, Severity)
-    }
+    Kategori String, Severity String):
+    GetMatchingIngredientsForList(GetMatchingMedKnowledges(VS, GetMedicationCodings(Medications)), VS, Kategori, Severity)
