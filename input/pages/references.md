@@ -4,12 +4,13 @@
 
 ### Technical specifications
 
-* [HL7 FHIR Release 4](https://hl7.org/fhir/R4/)
 * [Clinical Quality Language (CQL)](https://cql.hl7.org/)
-* [Using CQL with FHIR IG](https://build.fhir.org/ig/HL7/cql-ig/index.html)
+* [Content IG Walkthrough](https://github.com/cqframework/content-ig-walkthrough)
 * CQF Ruler - [CDS Hooks Request Processing](https://github.com/cqframework/cqf-ruler/wiki/CDS-Hooks-Request-Processing)
+* [HL7 FHIR R4](https://hl7.org/fhir/R4/)
 * [PlanDefinition/$apply in the FHIR specification](https://hl7.org/fhir/R4/plandefinition-operation-apply.html)
 * [PlanDefinition/$apply in the HAPI FHIR library](https://hapifhir.io/hapi-fhir/docs/clinical_reasoning/plan_definitions.html#apply)
+* [Using CQL with FHIR IG](https://build.fhir.org/ig/HL7/cql-ig/index.html)
 
 ### Examples
 
