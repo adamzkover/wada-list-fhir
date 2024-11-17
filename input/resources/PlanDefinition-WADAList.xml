@@ -3,6 +3,9 @@
     <meta>
         <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
     </meta>
+    <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+        <valueCode value="executable" />
+    </extension>
     <identifier>
         <use value="official" />
         <value value="PlanDefinition_WADAList" />
@@ -20,6 +23,7 @@
     <experimental value="true" />
     <date value="2024-09-28" />
     <library value="https://folk.ntnu.no/adamzk/it6103/Library/WADAList|0.1.0" />
+    <description value="Warnings based on WADA's List of Prohibited Substances and Methods" />
     <action>
         <title value="WADAs dopingliste" />
         <trigger>
