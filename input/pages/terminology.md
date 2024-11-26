@@ -2,7 +2,7 @@ Evaluation depends on coded information. Data elements such as substances, dose 
 
 * Substances
 * Dose forms
-* Units of measure
+* Units of measure (for specification of strength)
 
 Several code systems can be supported at the same time.
 
