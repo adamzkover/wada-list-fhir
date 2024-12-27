@@ -1,1 +1,1 @@
-curl -X POST -H "Content-Type: application/fhir+xml" -d@pd-apply-params.xml http://localhost:8080/fhir/PlanDefinition/WADAList/\$apply
+curl -X POST -H "Content-Type: application/fhir+xml" -d@../input/examples/Parameters-PlanDefinition-Apply.xml http://localhost:8080/fhir/PlanDefinition/WADAList/\$apply

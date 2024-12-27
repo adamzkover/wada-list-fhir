@@ -10,10 +10,52 @@
     <content value="complete" />
     <caseSensitive value="true" />
     <concept>
-        <code value="ID_433FABF6-968F-43D2-BF5E-CDC5546F0AB2" />
+        <code value="ID_9AEE6C13-6C89-40F4-AFA6-D130D3D89EB6" />
         <designation>
             <language value="no" />
-            <value value="Acetylsalisylsyre" />
+            <value value="Anamorelin" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_671BDAB2-F64E-441F-86F8-BAF237F7737B" />
+        <designation>
+            <language value="no" />
+            <value value="Androstanolon" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_4F38531E-4A07-4A20-BFB4-B77381B36625" />
+        <designation>
+            <language value="no" />
+            <value value="Bekaplermin" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_BCB36A7E-796B-41EA-BC6A-41EBC31FF84C" />
+        <designation>
+            <language value="no" />
+            <value value="Buserelin" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_32738590-7124-47D1-B281-830BAD5F4EC7" />
+        <designation>
+            <language value="no" />
+            <value value="Buserelinacetat" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_947AFB23-B94D-4E2C-9B72-1B77F3230B83" />
+        <designation>
+            <language value="no" />
+            <value value="Danazol" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_755EC85F-71A8-4B36-9A56-FA7B90CF3935" />
+        <designation>
+            <language value="no" />
+            <value value="Daprodustat" />
         </designation>
     </concept>
     <concept>
@@ -24,10 +66,437 @@
         </designation>
     </concept>
     <concept>
+        <code value="ID_AFA34A48-4315-4A0E-94F4-4363B090BA4C" />
+        <designation>
+            <language value="no" />
+            <value value="Deslorelin" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_D86706CD-3E6B-447F-8910-5B9EC0A89A3D" />
+        <designation>
+            <language value="no" />
+            <value value="Deslorelinacetat" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_6DA858DD-C551-4026-9869-8D86D6297D73" />
+        <designation>
+            <language value="no" />
+            <value value="Drostanolon" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_EC370228-1959-4B73-87C0-78F6FC94C84C" />
+        <designation>
+            <language value="no" />
+            <value value="Epoetin zeta" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_705D4593-9905-4003-B32C-A326BB677D48" />
+        <designation>
+            <language value="no" />
+            <value value="Erytropoietin, konsentrert oppløsning" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_9CAAEE37-6210-4157-BF5D-E74A363B739E" />
+        <designation>
+            <language value="no" />
+            <value value="Fluoksymesteron" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_981235D7-CD5C-4BC4-8F85-9007D485F567" />
+        <designation>
+            <language value="no" />
+            <value value="Gestrinon" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_287AE695-C27F-4CAA-B832-3D2143FD8B9D" />
+        <designation>
+            <language value="no" />
+            <value value="Goserelin" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_85B8AB1A-765F-4893-B9C0-A8DAF05C9E6A" />
+        <designation>
+            <language value="no" />
+            <value value="Goserelinacetat" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_AEECCC24-A4AC-435D-8C43-E08ED9636A84" />
+        <designation>
+            <language value="no" />
+            <value value="Histrelin" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_8FAFBAAB-EF86-42C9-82C7-A551FA9DB1A7" />
+        <designation>
+            <language value="no" />
+            <value value="Kapromorelin" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_25BF322D-7EF7-47BE-8311-78E7300E06C2" />
+        <designation>
+            <language value="no" />
+            <value value="Klenbuterol" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_46698A2C-3DE1-4EF7-8834-7B43417D85C0" />
+        <designation>
+            <language value="no" />
+            <value value="Kobolt" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_A95BC4C2-8359-4C4A-9389-6EB908B87EF5" />
+        <designation>
+            <language value="no" />
+            <value value="Koriongonadotropin" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_E5022A31-A084-434A-BA75-4D4B01BBE1F6" />
+        <designation>
+            <language value="no" />
+            <value value="Koriongonadotropin alfa" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_4C6FF98B-3BD4-4594-B277-9C0660B3DA96" />
+        <designation>
+            <language value="no" />
+            <value value="Kortikorelin, human" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_60932732-D2E4-4594-BC63-603348BC6A00" />
+        <designation>
+            <language value="no" />
+            <value value="Kortikotropin" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_05FD425F-0E3C-4BDA-BFA6-CD7D87E736B7" />
+        <designation>
+            <language value="no" />
+            <value value="Leuprorelin" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_9EC3DA07-2638-41B7-BF3C-74039BB2035B" />
+        <designation>
+            <language value="no" />
+            <value value="Leuprorelinacetat" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_11070B3F-F24F-4D23-9123-C419BCE84A61" />
+        <designation>
+            <language value="no" />
+            <value value="Leuprorelinmesilat" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_515B8C3A-152D-45B3-B1AF-28C26F89CB51" />
+        <designation>
+            <language value="no" />
+            <value value="Lonapegsomatropin" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_DA52B19C-AFEC-4B90-A1C7-6F0A7ADCE1F2" />
+        <designation>
+            <language value="no" />
+            <value value="Luspatercept" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_064A9520-0154-450C-822C-4F3C1CF22138" />
+        <designation>
+            <language value="no" />
+            <value value="Luteiniserende hormon" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_42C85722-745E-481D-88CD-EFDFF48B3CBD" />
+        <designation>
+            <language value="no" />
+            <value value="Lutropin alfa" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_C2308892-CC27-454D-B3A5-9A06B3D0E89A" />
+        <designation>
+            <language value="no" />
+            <value value="Macimorelin" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_FBF20B91-E15B-4F00-94E0-31522453695B" />
+        <designation>
+            <language value="no" />
+            <value value="Mekasermin" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_A78CF25C-7FBA-406D-9150-736088C22ADC" />
+        <designation>
+            <language value="no" />
+            <value value="Menotropin" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_EF790D41-6002-4F91-A44B-6F9157AE604D" />
+        <designation>
+            <language value="no" />
+            <value value="Mesterolon" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_4D34F34E-B6B4-40E8-BCAE-093A315EAEB6" />
+        <designation>
+            <language value="no" />
+            <value value="Metandienon" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_0D5C6BA4-2D2E-41CA-9EC1-C7633052E52E" />
+        <designation>
+            <language value="no" />
+            <value value="Metenolon" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_0FD5AA9A-14A5-4819-A04D-1F56C2A26B78" />
+        <designation>
+            <language value="no" />
+            <value value="Metoksypolyetylenglykol-epoetin beta" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_377B8083-8A40-47F9-A760-7D5CB8677ACC" />
+        <designation>
+            <language value="no" />
+            <value value="Metyltestosteron" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_56ABE043-A36A-4BA9-9DBF-16D7D54BE571" />
+        <designation>
+            <language value="no" />
+            <value value="Molidustat" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_D97B1AD2-C964-4E1B-865F-DAF230EDCB3C" />
+        <designation>
+            <language value="no" />
+            <value value="Nandrolon" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_A30034BC-3443-4DA9-8B8C-DE40243A3797" />
+        <designation>
+            <language value="no" />
+            <value value="Nafarelin" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_AD3B4E5C-D9F9-488B-A34E-9493E35EDADC" />
+        <designation>
+            <language value="no" />
+            <value value="Nafarelinacetat" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_4DF6225F-79EA-4DE1-B4E1-03AC12D6A9D9" />
+        <designation>
+            <language value="no" />
+            <value value="Noretandrolon" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_92F4EB1F-7573-4BA5-9F61-FBE8007711A4" />
+        <designation>
+            <language value="no" />
+            <value value="Oksaboloncipionat" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_814D557E-8065-4B2C-94D5-3E42B5A4F3D0" />
+        <designation>
+            <language value="no" />
+            <value value="Oksandrolon" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_AAF93C1C-9489-4368-8614-7F1918BF9AB4" />
+        <designation>
+            <language value="no" />
+            <value value="Oksymetolon" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_6005F3CF-B2C0-4283-A3B9-92A40DBB4576" />
+        <designation>
+            <language value="no" />
+            <value value="Osilodrostat" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_CB877A48-6C82-4B44-81A9-3CF405A614CC" />
+        <designation>
+            <language value="no" />
+            <value value="Peginesatid" />
+        </designation>
+    </concept>
+    <concept>
         <code value="ID_FF68A209-DF41-4647-A725-F034A8F0C5CC" />
         <designation>
             <language value="no" />
             <value value="Prasteron" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_10BCE261-08EE-4E26-B38B-1DB0F7FBFA2D" />
+        <designation>
+            <language value="no" />
+            <value value="Roksadustat" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_D2AE06B4-8EF7-4D86-B6A3-8419A818DD62" />
+        <designation>
+            <language value="no" />
+            <value value="Sermorelin" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_2D5902D6-2FA6-4A36-A43E-524140066068" />
+        <designation>
+            <language value="no" />
+            <value value="Somapacitan" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_14530B97-784F-47FD-AA99-BA5513DEB40F" />
+        <designation>
+            <language value="no" />
+            <value value="Somatrogon" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_7D290608-31AD-4929-A3E1-4F2ABB208A82" />
+        <designation>
+            <language value="no" />
+            <value value="Somatropin" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_1E7FBFDB-05BB-496C-BFF6-E2F0FA6CAE8F" />
+        <designation>
+            <language value="no" />
+            <value value="Somatropinoppløsning, konsentrert" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_E7ADF684-F972-4ED1-9C79-2DABDAE829D7" />
+        <designation>
+            <language value="no" />
+            <value value="Sotatercept" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_92510E39-9AA0-4446-84BD-EAB2BBCBE504" />
+        <designation>
+            <language value="no" />
+            <value value="Stanozolol" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_D72C7F40-D732-43D3-B47F-452E7278E4E5" />
+        <designation>
+            <language value="no" />
+            <value value="Tesamorelin" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_3BD4AFEF-8E0E-4DDD-9B25-0E8B389D9539" />
+        <designation>
+            <language value="no" />
+            <value value="Testosteron" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_669C4D75-B311-41AA-9081-6BEE28DE46CA" />
+        <designation>
+            <language value="no" />
+            <value value="Tetrakosaktid" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_F8D2B83D-12D2-4E81-B24B-AA35505E53B2" />
+        <designation>
+            <language value="no" />
+            <value value="Tetrakosaktidheksaacetat" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_1B9C848C-4166-4981-B6B9-CBB368209916" />
+        <designation>
+            <language value="no" />
+            <value value="Tibolon" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_A8251885-FC84-4ED3-87B6-08B4BDE4622E" />
+        <designation>
+            <language value="no" />
+            <value value="Triptorelin" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_60DAEF58-927A-47A8-9C83-DB55614792EA" />
+        <designation>
+            <language value="no" />
+            <value value="Triptorelinacetat" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_91442FE2-6BB6-4979-AC42-08F9B5AB0DCA" />
+        <designation>
+            <language value="no" />
+            <value value="Triptorelinembonat" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_69F05FE6-0AA5-49B8-A080-2A6028C368A7" />
+        <designation>
+            <language value="no" />
+            <value value="Vadadustat" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_4C004FD3-30CD-4D63-A4FF-5B42A4684115" />
+        <designation>
+            <language value="no" />
+            <value value="Xenon" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_287B677F-0891-45BC-AD14-16A74FEDBF21" />
+        <designation>
+            <language value="no" />
+            <value value="Zeranol" />
         </designation>
     </concept>
 </CodeSystem>

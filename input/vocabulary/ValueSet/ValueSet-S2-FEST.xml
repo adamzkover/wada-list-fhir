@@ -9,10 +9,294 @@
     <description value="FEST codes for substances included in section S2 of the List." />
     <expansion>
         <timestamp value="2024-07-18" />
+        <!-- S2.1. Erytropoietin (EPO) og stoffer som påvirker erytropoiesen -->
+        <!-- S2.1.1. Erytropoietin-reseptoragonister, for eksempel -->
+        <!-- darbepoietin (dEPO) -->
         <contains>
             <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
             <code value="ID_0CF89765-A38A-4D76-89DC-A9D9630B9BFF" />
             <display value="Darbepoetin alfa" />
         </contains>
+        <!-- erytropoietin (EPO) -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_705D4593-9905-4003-B32C-A326BB677D48" />
+            <display value="Erytropoietin, konsentrert oppløsning" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_EC370228-1959-4B73-87C0-78F6FC94C84C" />
+            <display value="Epoetin zeta" />
+        </contains>
+        <!-- EPO-baserte molekyler (for eksempel EPO-Fc, metoksypolyetylenglykol-epoetin beta (Continous erythropoietin receptor activator, CERA)) -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_0FD5AA9A-14A5-4819-A04D-1F56C2A26B78" />
+            <display value="Metoksypolyetylenglykol-epoetin beta" />
+        </contains>
+        <!-- EPO-lignende stoffer og molekyler bygget på disse (for eksempel CNTO-530 og peginesatid) -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_CB877A48-6C82-4B44-81A9-3CF405A614CC" />
+            <display value="Peginesatid" />
+        </contains>
+        <!-- S2.1.2 Hypoksi-induserbar faktor (HIF)-aktivatorer, for eksempel -->
+        <!-- daprodustat (GSK1278863) -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_755EC85F-71A8-4B36-9A56-FA7B90CF3935" />
+            <display value="Daprodustat" />
+        </contains>
+        <!-- IOX2 -->
+        <!-- kobolt -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_46698A2C-3DE1-4EF7-8834-7B43417D85C0" />
+            <display value="Kobolt" />
+        </contains>
+        <!-- molidustat (BAY 85-3934) -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_56ABE043-A36A-4BA9-9DBF-16D7D54BE571" />
+            <display value="Molidustat" />
+        </contains>
+        <!-- roksadustat (FG-4592) -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_10BCE261-08EE-4E26-B38B-1DB0F7FBFA2D" />
+            <display value="Roksadustat" />
+        </contains>
+        <!-- vadadustat (AKB-6548) -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_69F05FE6-0AA5-49B8-A080-2A6028C368A7" />
+            <display value="Vadadustat" />
+        </contains>
+        <!-- xenon -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_4C004FD3-30CD-4D63-A4FF-5B42A4684115" />
+            <display value="Xenon" />
+        </contains>
+        <!-- S2.1.3. GATA-hemmere, for eksempel -->
+        <!-- K-11706 -->
+        <!-- S2.1.4. Transformerende vekstfaktor-beta (transforming growth factor-beta (TGF-β) )-signalhemmere, for eksempel -->
+        <!-- luspatercept -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_DA52B19C-AFEC-4B90-A1C7-6F0A7ADCE1F2" />
+            <display value="Luspatercept" />
+        </contains>
+        <!-- sotatercept -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_E7ADF684-F972-4ED1-9C79-2DABDAE829D7" />
+            <display value="Sotatercept" />
+        </contains>
+        <!-- S2.1.5. Medfødte reparasjonsreseptoragonister (Innate repair receptor agonists), for eksempel -->
+        <!-- asialo EPO -->
+        <!-- karbamylert EPO (CEPO) -->
+        <!-- S2.2. Peptidhormoner og deres frigjørende faktorer -->
+        <!-- S2.2.1. Testosteron-stimulerende peptider hos menn, inkludert, men ikke begrenset til -->
+        <!-- koriongonadotropin (chorionic gonadotrophin (CG); “graviditetshormonet”) -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_A95BC4C2-8359-4C4A-9389-6EB908B87EF5" />
+            <display value="Koriongonadotropin" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_E5022A31-A084-434A-BA75-4D4B01BBE1F6" />
+            <display value="Koriongonadotropin alfa" />
+        </contains>
+        <!-- luteiniserende hormon (LH) -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_064A9520-0154-450C-822C-4F3C1CF22138" />
+            <display value="Luteiniserende hormon" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_42C85722-745E-481D-88CD-EFDFF48B3CBD" />
+            <display value="Lutropin alfa" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_A78CF25C-7FBA-406D-9150-736088C22ADC" />
+            <display value="Menotropin" />
+        </contains>
+        <!-- gonadotropinfrigjørende hormon (gonadotrophin-releasing hormone (GnRH, gonadorelin)) og dets agonist-analoger (for eksempel buserelin, deslorelin, goserelin, histrelin, leuprorelin, nafarelin og triptorelin) -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_BCB36A7E-796B-41EA-BC6A-41EBC31FF84C" />
+            <display value="Buserelin" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_32738590-7124-47D1-B281-830BAD5F4EC7" />
+            <display value="Buserelinacetat" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_AFA34A48-4315-4A0E-94F4-4363B090BA4C" />
+            <display value="Deslorelin" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_D86706CD-3E6B-447F-8910-5B9EC0A89A3D" />
+            <display value="Deslorelinacetat" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_287AE695-C27F-4CAA-B832-3D2143FD8B9D" />
+            <display value="Goserelin" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_85B8AB1A-765F-4893-B9C0-A8DAF05C9E6A" />
+            <display value="Goserelinacetat" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_AEECCC24-A4AC-435D-8C43-E08ED9636A84" />
+            <display value="Histrelin" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_05FD425F-0E3C-4BDA-BFA6-CD7D87E736B7" />
+            <display value="Leuprorelin" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_9EC3DA07-2638-41B7-BF3C-74039BB2035B" />
+            <display value="Leuprorelinacetat" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_11070B3F-F24F-4D23-9123-C419BCE84A61" />
+            <display value="Leuprorelinmesilat" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_A30034BC-3443-4DA9-8B8C-DE40243A3797" />
+            <display value="Nafarelin" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_AD3B4E5C-D9F9-488B-A34E-9493E35EDADC" />
+            <display value="Nafarelinacetat" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_A8251885-FC84-4ED3-87B6-08B4BDE4622E" />
+            <display value="Triptorelin" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_60DAEF58-927A-47A8-9C83-DB55614792EA" />
+            <display value="Triptorelinacetat" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_91442FE2-6BB6-4979-AC42-08F9B5AB0DCA" />
+            <display value="Triptorelinembonat" />
+        </contains>
+        <!-- kisspeptin og dets agonist-analoger -->
+        <!-- S2.2.2. Kortikotropiner og deres utløsende/frigjørende faktorer (for eksempel kortikorelin og tetrakosaktid) -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_60932732-D2E4-4594-BC63-603348BC6A00" />
+            <display value="Kortikotropin" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_4C6FF98B-3BD4-4594-B277-9C0660B3DA96" />
+            <display value="Kortikorelin, human" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_669C4D75-B311-41AA-9081-6BEE28DE46CA" />
+            <display value="Tetrakosaktid" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_F8D2B83D-12D2-4E81-B24B-AA35505E53B2" />
+            <display value="Tetrakosaktidheksaacetat" />
+        </contains>
+        <!-- S2.2.3. Veksthormon (growth hormone (GH)), dets analoger og fragmenter, inkludert, men ikke begrenset til: -->
+        <!-- vektshormonanaloger, for eksempel lonapegsomatropin, somapacitan og somatrogon -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_515B8C3A-152D-45B3-B1AF-28C26F89CB51" />
+            <display value="Lonapegsomatropin" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_2D5902D6-2FA6-4A36-A43E-524140066068" />
+            <display value="Somapacitan" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_14530B97-784F-47FD-AA99-BA5513DEB40F" />
+            <display value="Somatrogon" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_7D290608-31AD-4929-A3E1-4F2ABB208A82" />
+            <display value="Somatropin" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_1E7FBFDB-05BB-496C-BFF6-E2F0FA6CAE8F" />
+            <display value="Somatropinoppløsning, konsentrert" />
+        </contains>
+        <!-- veksthormonfragmenter, for eksempel AOD-9604 og hGH 176-191 -->
+        <!-- S2.2.4. Veksthormonfrigjørende faktorer (growth hormone releasing factors), inkludert, men ikke begrenset til: -->
+        <!-- veksthormonfrigjørende hormon (growth hormone releasing hormone (GHRH)) og dets analoger (for eksempel CJC-1293, CJC-1295, sermorelin og tesamorelin) -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_D2AE06B4-8EF7-4D86-B6A3-8419A818DD62" />
+            <display value="Sermorelin" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_D72C7F40-D732-43D3-B47F-452E7278E4E5" />
+            <display value="Tesamorelin" />
+        </contains>
+        <!-- veksthormonsekretagoger (growth hormone secretagogues (GHS)) og deres mimetika, for eksempel anamorelin, ibutamoren (MK-677), ipamorelin, kapromorelin, lenomorelin (ghrelin), macimorelin og tabimorelin -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_9AEE6C13-6C89-40F4-AFA6-D130D3D89EB6" />
+            <display value="Anamorelin" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_8FAFBAAB-EF86-42C9-82C7-A551FA9DB1A7" />
+            <display value="Kapromorelin" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_C2308892-CC27-454D-B3A5-9A06B3D0E89A" />
+            <display value="Macimorelin" />
+        </contains>
+        <!-- veksthormonfrigjørende peptider (GH releasing peptides (GHRPs)), for eksempel alexamorelin, examorelin (heksarelin), GHRP-1, GHRP-2 (pralmorelin), GHRP-3, GHRP-4. GHRP-5 og GHRP-6 -->
+        <!-- S2.3. Vekstfaktorer og vekstfaktormodulatorer -->
+        <!-- fibroblast vekstfaktorer (fibroblast growth factors, FGFs) -->
+        <!-- hepatocytt vekstfaktor (hepatocyte growth factor, HGF) -->
+        <!-- insulinlignende vekstfaktor-1 (insulin-like growth factor, IGF-1, mekasermin) og dets analoger -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_FBF20B91-E15B-4F00-94E0-31522453695B" />
+            <display value="Mekasermin" />
+        </contains>
+        <!-- mekano-vekstfaktorer (mechano growth factors, MGFs) -->
+        <!-- platederivert vekstfaktor (platelet-derived growth factor, PDGF) -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_4F38531E-4A07-4A20-BFB4-B77381B36625" />
+            <display value="Bekaplermin" />
+        </contains>
+        <!-- tymosin-β4 og dets derivater, for eksempel TB-500 -->
+        <!-- vaskulær endotelial vekstfaktor (vascular-endothelial growth factor, VEGF) -->
     </expansion>
 </ValueSet>

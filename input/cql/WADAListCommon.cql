@@ -2,7 +2,8 @@ library WADAListCommon version '0.1.0'
 using FHIR version '4.0.1'
 include FHIRHelpers version '4.0.1' called FHIRHelpers
 
-define function GetMedicationCodings(Medications List<FHIR.Medication>):
+define function GetMedicationCodings(
+    Medications List<FHIR.Medication>):
   distinct(
     flatten(
       Medications M
@@ -10,12 +11,18 @@ define function GetMedicationCodings(Medications List<FHIR.Medication>):
     )
   )
 
-define function GetMatchingMedKnowledges(VS System.ValueSet, MedicationCodes List<FHIR.Coding>):
-  [MedicationKnowledge] MK
-  where MK.ingredient.item.coding in VS and (Count(MK.code.coding intersect MedicationCodes) > 0)
-  return MK
+define function GetMatchingMedication(
+    MK MedicationKnowledge,
+    Medications List<FHIR.Medication>):
+  Medications M
+  where Count(M.code.coding intersect MK.code.coding) > 0
+  return M
 
-define function GetMatchingIngredients(MK MedicationKnowledge, VS System.ValueSet, Kategori System.String, Severity System.String):
+define function GetMatchingIngredients(
+    MK MedicationKnowledge,
+    VS System.ValueSet,
+    GroupCode System.String,
+    Severity System.String):
   MK.code.text + ': ' +
   Combine(
     MK.ingredient Ing
@@ -27,15 +34,43 @@ define function GetMatchingIngredients(MK MedicationKnowledge, VS System.ValueSe
       when Severity = 'yellow' then 'forbudt iht. WADAs dopingliste, med visse unntak/restriksjoner'
       else 'Ukjent'
     end
-  ) + ' (' + Kategori + ')'
+  ) + ' (' + GroupCode + ')'
 
-define function GetMatchingIngredientsForList(MKList List<MedicationKnowledge>, VS System.ValueSet, Kategori System.String, Severity System.String):
-  Combine(
-    (MKList MK
-    return GetMatchingIngredients(MK, VS, Kategori, Severity)), '; '
-  )
+define function GetMedicationRefs(
+    Medications List<FHIR.Medication>):
+  Medications M
+  return Reference {
+    reference: string { value: 'Medication/' + M.id }
+  }
 
-define function GetCard(
-    Medications List<FHIR.Medication>, VS System.ValueSet,
-    Kategori String, Severity String):
-    GetMatchingIngredientsForList(GetMatchingMedKnowledges(VS, GetMedicationCodings(Medications)), VS, Kategori, Severity)
+/*
+define function GetIssues(
+    Medications List<FHIR.Medication>,
+    VS System.ValueSet,
+    GroupCode String, Severity String, URL String):
+  [MedicationKnowledge] MK
+    let
+      matchingCodes: MK.code.coding intersect GetMedicationCodings(Medications)
+    where MK.ingredient.item.coding in VS and Count(matchingCodes) > 0
+    return DetectedIssue {
+      status: DetectedIssueStatus  { value: 'final' },
+      implicated: GetMedicationRefs(GetMatchingMedication(MK, Medications)),
+      detail: string { value: GetMatchingIngredients(MK, VS, GroupCode, Severity) },
+      reference: uri { value: URL }
+    }
+*/
+
+define function GetIssues(
+    Medications List<FHIR.Medication>,
+    VS System.ValueSet,
+    GroupCode String, Severity String, URL String):
+  [MedicationKnowledge: ingredient.item.coding in VS] MK
+    let
+      matchingCodes: MK.code.coding intersect GetMedicationCodings(Medications)
+    where Count(matchingCodes) > 0
+    return DetectedIssue {
+      status: DetectedIssueStatus  { value: 'final' },
+      implicated: GetMedicationRefs(GetMatchingMedication(MK, Medications)),
+      detail: string { value: GetMatchingIngredients(MK, VS, GroupCode, Severity) },
+      reference: uri { value: URL }
+    }

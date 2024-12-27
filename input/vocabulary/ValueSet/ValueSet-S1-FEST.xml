@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
+    <!-- TODO RefVirkestoff:
+        Referanse fra virkestoff som er kun terapeutisk del
+        til virkestoff-id som er fullstendig virkestoff.
+        Eksempelvis "Lisinopril" (terapeutisk del av virkestoff) og
+        "Lisinoprildihydrat" (fullstendig virkestoff). Det kan være flere
+        fullstendige virkestoff som pekes på av samme virkestoff. Det er kun
+        Virkestoff som er terapeutisk del som inngår i LegemiddelVirkestoff
+    -->
     <id value="S1-FEST" />
     <url value="https://folk.ntnu.no/adamzk/it6103/ValueSet/S1-FEST" />
     <name value="S1Fest" />
@@ -9,10 +17,202 @@
     <description value="FEST codes for substances included in section S1 of the List." />
     <expansion>
         <timestamp value="2024-07-18" />
+        <!-- S1.1. Anabole androgene steroider (AAS) -->
+        <!-- 1-androstendiol (5α-androst-1-en-3β,17β-diol) -->
+        <!-- 1-androstendion (5α-androst-1-en-3,17-dion) -->
+        <!-- 1-androsteron (3α-hydroksy-5α-androst-1-en-17-on) -->
+        <!-- 1-epiandrosteron (3β-hydroksy-5α-androst-1-en-17-on) -->
+        <!-- 1-testosteron (17β-hydroksy-5α-androst-1-en-3-on) -->
+        <!-- 4-androstendiol (androst-4-en-3β,17β-diol) -->
+        <!-- 4-hydroksytestosteron (4,17β-dihydroksyandrost-4-en-3-on) -->
+        <!-- 5-androstendion (androst-5-en-3,17-dion) -->
+        <!-- 7α-hydroksy-DHEA -->
+        <!-- 7β-hydroksy-DHEA -->
+        <!-- 7-keto-DHEA -->
+        <!-- 11β-metyl-19-nortestosteron -->
+        <!-- 17α-metylepitiostanol (epistan) -->
+        <!-- 19-norandrostendiol (estr-4-en-3,17-diol) -->
+        <!-- 19-norandrostendion (estr-4-en-3,17-dion) -->
+        <!-- androst-4-en-3,11,17-trion (11-ketoandrostendion, adrenosteron) -->
+        <!-- androstanolon (5α-dihydrotestosteron; 17β-hydroksy-5α-androstan-3-on) -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_671BDAB2-F64E-441F-86F8-BAF237F7737B" />
+            <display value="Androstanolon" />
+        </contains>
+        <!-- androstendiol (androst-5-en-3β,17β-diol) -->
+        <!-- androstendion (androst-4-en-3,17-dion) -->
+        <!-- bolasteron -->
+        <!-- boldenon -->
+        <!-- boldion (androsta-1,4-dien-3,17-dion) -->
+        <!-- danazol ([1,2]oksazolo[4’,5’:2,3]pregna-4-en-20-yn-17α-ol) -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_947AFB23-B94D-4E2C-9B72-1B77F3230B83" />
+            <display value="Danazol" />
+        </contains>
+        <!-- dehydroklormetyltestosteron (4-kloro-17β-hydroksy-17α-metylandrosta-1,4-dien-3-on) -->
+        <!-- desoksymetyltestosteron (17α-metyl-5α-androst-2-en-17β-ol og 17α-metyl-5α-androst-3-en-17β-ol) -->
+        <!-- dimetandrolon (7α,11β-dimetyl-19-nortestosteron) -->
+        <!-- drostanolon -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_6DA858DD-C551-4026-9869-8D86D6297D73" />
+            <display value="Drostanolon" />
+        </contains>
+        <!-- epiandrosteron (3β-hydroksy-5α-androstan-17-on) -->
+        <!-- epi-dihydrotestosteron (17β-hydroksy-5β-androstan-3-on) -->
+        <!-- epitestosteron -->
+        <!-- etylestrenol (19-norpregna-4-en-17α-ol) -->
+        <!-- fluoksymesteron -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_9CAAEE37-6210-4157-BF5D-E74A363B739E" />
+            <display value="Fluoksymesteron" />
+        </contains>
+        <!-- formebolon -->
+        <!-- furazabol (17α-metyl[1,2,5]oksadiazolo[3’,4’:2,3]-5α-androstan-17β-ol) -->
+        <!-- gestrinon -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_981235D7-CD5C-4BC4-8F85-9007D485F567" />
+            <display value="Gestrinon" />
+        </contains>
+        <!-- kalusteron -->
+        <!-- klostebol -->
+        <!-- kvinbolon -->
+        <!-- mestanolon -->
+        <!-- mesterolon -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_EF790D41-6002-4F91-A44B-6F9157AE604D" />
+            <display value="Mesterolon" />
+        </contains>
+        <!-- metandienon (17β-hydroksy-17α-metylandrosta-1,4-dien-3-on) -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_4D34F34E-B6B4-40E8-BCAE-093A315EAEB6" />
+            <display value="Metandienon" />
+        </contains>
+        <!-- metandriol -->
+        <!-- metasteron (17β-hydroksy-2α,17α-dimetyl-5α-androstan-3-on) -->
+        <!-- metenolon -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_0D5C6BA4-2D2E-41CA-9EC1-C7633052E52E" />
+            <display value="Metenolon" />
+        </contains>
+        <!-- metribolon (metyltrienolon, 17β-hydroksy-17α-metylestra-4,9,11-trien-3-on) -->
+        <!-- metyl-1-testosteron (17β-hydroksy-17α-metyl-5α-androst-1-en-3-on) -->
+        <!-- metyldienolon (17β-hydroksy-17α-metylestra-4,9-dien-3-on) -->
+        <!-- metylklostebol -->
+        <!-- metylnortestosteron (17β-hydroksy-17α-metylestr-4-en-3-on) -->
+        <!-- metyltestosteron -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_377B8083-8A40-47F9-A760-7D5CB8677ACC" />
+            <display value="Metyltestosteron" />
+        </contains>
+        <!-- miboleron -->
+        <!-- nandrolon (19-nortestosteron) -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_D97B1AD2-C964-4E1B-865F-DAF230EDCB3C" />
+            <display value="Nandrolon" />
+        </contains>
+        <!--
+        <RefVirkestoff>ID_13004B59-8CED-4775-B990-70C01452DEDE</RefVirkestoff>
+        <RefVirkestoff>ID_283906BB-D239-487A-B7D9-4F92A5512383</RefVirkestoff>
+        <RefVirkestoff>ID_94EBF415-729F-4701-B340-925C7A181715</RefVirkestoff>
+        <RefVirkestoff>ID_C5219AA8-EB69-4E5B-868C-6F3A78AA30F1</RefVirkestoff>
+        -->
+        <!-- norboleton -->
+        <!-- noretandrolon -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_4DF6225F-79EA-4DE1-B4E1-03AC12D6A9D9" />
+            <display value="Noretandrolon" />
+        </contains>
+        <!-- norklostebol (4-kloro-17β-ol-estr-4-en-3-on) -->
+        <!-- oksabolon -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_92F4EB1F-7573-4BA5-9F61-FBE8007711A4" />
+            <display value="Oksaboloncipionat" />
+        </contains>
+        <!-- oksandrolon -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_814D557E-8065-4B2C-94D5-3E42B5A4F3D0" />
+            <display value="Oksandrolon" />
+        </contains>
+        <!-- oksymesteron -->
+        <!-- oksymetolon -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_AAF93C1C-9489-4368-8614-7F1918BF9AB4" />
+            <display value="Oksymetolon" />
+        </contains>
+        <!-- prasteron (dehydroepiandrosteron, DHEA, 3β-hydroksyandrost-5-en-17-on) -->
         <contains>
             <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
             <code value="ID_FF68A209-DF41-4647-A725-F034A8F0C5CC" />
             <display value="Prasteron" />
         </contains>
+        <!-- prostanozol (17β-[(tetrahydropyran-2-yl)oksy]-1’H-pyrazolo[3,4:2,3]-5α-androstan) -->
+        <!-- stanozolol -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_92510E39-9AA0-4446-84BD-EAB2BBCBE504" />
+            <display value="Stanozolol" />
+        </contains>
+        <!-- stenbolon -->
+        <!-- testosteron -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_3BD4AFEF-8E0E-4DDD-9B25-0E8B389D9539" />
+            <display value="Testosteron" />
+        </contains>
+        <!--
+        <RefVirkestoff>ID_2A27FF90-9AF9-493F-9A86-EF223C8ADA4E</RefVirkestoff>
+        <RefVirkestoff>ID_4A873400-E6A2-4168-9E7D-028DC1F472DC</RefVirkestoff>
+        <RefVirkestoff>ID_51A2B66F-C92E-4395-B6A5-EA60C60B3421</RefVirkestoff>
+        <RefVirkestoff>ID_9E960876-1814-4632-8A74-B5FF29D5A4B3</RefVirkestoff>
+        <RefVirkestoff>ID_A57935E5-6B0D-4905-AF2A-47A45FBEB681</RefVirkestoff>
+        -->
+        <!-- tetrahydrogestrinon (17-hydroksy-18a-homo-19-nor-17α-pregna-4,9,11-trien-3-on) -->
+        <!-- tibolon -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_1B9C848C-4166-4981-B6B9-CBB368209916" />
+            <display value="Tibolon" />
+        </contains>
+        <!-- trenbolon (17β-hydroksyestr-4,9,11-trien-3-on) -->
+        <!-- trestolon (7α-metyl-19-nortestosteron, MENT) -->
+        <!-- S1.2. Øvrige anabole stoffer -->
+        <!-- klenbuterol -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_25BF322D-7EF7-47BE-8311-78E7300E06C2" />
+            <display value="Klenbuterol" />
+        </contains>
+        <!--
+        <RefVirkestoff>ID_1682508A-DEE0-413E-8C4C-D582717DF36C</RefVirkestoff>
+        -->
+        <!-- osilodrostat -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_6005F3CF-B2C0-4283-A3B9-92A40DBB4576" />
+            <display value="Osilodrostat" />
+        </contains>
+        <!-- ractopamin -->
+        <!-- selektive androgenreseptormodulatorer (SARM'er, for eksempel andarin, LGD-4033 (ligandrol), enobosarm (ostarin), RAD140, S-23 og YK-11) -->
+        <!-- zeranol -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_287B677F-0891-45BC-AD14-16A74FEDBF21" />
+            <display value="Zeranol" />
+        </contains>
+        <!-- zilpaterol -->
     </expansion>
 </ValueSet>

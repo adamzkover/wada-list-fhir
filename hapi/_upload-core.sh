@@ -1,0 +1,3 @@
+curl -X POST -H "Content-Type: application/fhir+xml" -d@../input/tests/WADAList/test-s1/MedicationKnowledge/MedicationKnowledge-Aranesp-inj-oppl-50-mikrog-sproyte.xml http://localhost:8080/fhir/MedicationKnowledge
+curl -X POST -H "Content-Type: application/fhir+xml" -d@../input/tests/WADAList/test-s1/MedicationKnowledge/MedicationKnowledge-Aspirin-tab-500-mg.xml http://localhost:8080/fhir/MedicationKnowledge
+curl -X POST -H "Content-Type: application/fhir+xml" -d@../input/tests/WADAList/test-s1/MedicationKnowledge/MedicationKnowledge-Intrarosa-vagitorie-6,5-mg.xml http://localhost:8080/fhir/MedicationKnowledge

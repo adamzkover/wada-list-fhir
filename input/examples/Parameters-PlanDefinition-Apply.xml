@@ -1,0 +1,59 @@
+<Parameters xmlns="http://hl7.org/fhir">
+    <id value="Parameters-PlanDefinition-Apply" />
+    <parameter>
+        <name value="subject" />
+        <valueString value="Patient/90c280b3-a8d4-4df2-bd54-831f7d70c831" />
+    </parameter>
+    <parameter>
+        <name value="data" />
+        <resource>
+            <Bundle>
+                <type value="collection" />
+                <entry>
+                    <fullUrl value="urn:uuid:90c280b3-a8d4-4df2-bd54-831f7d70c831" />
+                    <resource>
+                        <Patient>
+                            <id value="90c280b3-a8d4-4df2-bd54-831f7d70c831" />
+                            <name>
+                                <family value="Doe" />
+                                <given value="John" />
+                            </name>
+                        </Patient>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:3c4c0885-f8a7-403f-a667-561248956529" />
+                    <resource>
+                        <Medication>
+                            <id value="3c4c0885-f8a7-403f-a667-561248956529" />
+                            <code>
+                                <coding>
+                                    <system value="http://legemiddelverket.no/FEST/LegemiddelMerkevareID" />
+                                    <code value="ID_F37082E9-651A-4E72-A72D-37DEFEA560AF" />
+                                    <display value="Intrarosa vagitorie 6,5 mg" />
+                                </coding>
+                                <text value="Intrarosa vagitorie 6,5 mg" />
+                            </code>
+                        </Medication>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:239c94fb-58a5-4a20-8a67-40a062fd87d0" />
+                    <resource>
+                        <Medication>
+                            <id value="239c94fb-58a5-4a20-8a67-40a062fd87d0" />
+                            <code>
+                                <coding>
+                                    <system value="http://legemiddelverket.no/FEST/LegemiddelMerkevareID" />
+                                    <code value="ID_B22FCF5F-1B95-4B7F-9E7D-8BA5A265974D" />
+                                    <display value="Aranesp inj, oppl 50 mikrog/sprøyte" />
+                                </coding>
+                                <text value="Aranesp inj, oppl 50 mikrog/sprøyte" />
+                            </code>
+                        </Medication>
+                    </resource>
+                </entry>
+            </Bundle>
+        </resource>
+    </parameter>
+</Parameters>
