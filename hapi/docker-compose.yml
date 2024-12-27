@@ -11,6 +11,16 @@ services:
       - ./h2:/h2
     environment:
       - COMPOSE_PROJECT_NAME=wada-list-cds
+    depends_on:
+      - db
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: admin
+      POSTGRES_DB: hapi
 
 configs:
   hapi:
