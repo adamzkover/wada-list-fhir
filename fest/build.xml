@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wada-list-fhir">
+
+    <target name="downloadSaxon">
+        <mkdir dir="lib" />
+        <get skipexisting="false"
+            src="https://github.com/Saxonica/Saxon-HE/raw/main/12/Java/SaxonHE12-2J.zip"
+            dest="lib/SaxonHE12-2J.zip" />
+        <unzip dest="lib" src="lib/SaxonHE12-2J.zip">
+            <patternset>
+                <include name="saxon-he-12.2.jar" />
+                <include name="lib/*.jar" />
+            </patternset>
+            <mapper type="flatten" />
+        </unzip>
+    </target>
+
+    <target name="downloadFest">
+        <get skipexisting="true"
+            src="https://www.legemiddelsok.no/_layouts/15/FESTmelding/fest251.zip"
+            dest="fest251.zip" />
+        <unzip
+            src="fest251.zip"
+            dest="." />
+    </target>
+
+    <target name="festVirkestoff">
+        <xslt force="yes"
+            style="fest-virkestoff.xsl"
+            in="fest251.xml"
+            out="fest-virkestoff-codesystem.xml">
+            <factory name="net.sf.saxon.TransformerFactoryImpl" />
+        </xslt>
+    </target>
+
+    <target name="festLegemiddelMerkevare">
+        <xslt force="yes"
+            style="fest-legemiddelmerkevare.xsl"
+            in="fest251.xml"
+            out="fest-legemiddelmerkevare-medicationknowledge.xml">
+            <factory name="net.sf.saxon.TransformerFactoryImpl" />
+        </xslt>
+    </target>
+
+    <target name="uploadCoreData">
+        <exec executable="curl">
+            <arg value="-v" />
+            <arg value="-H" />
+            <arg value="Content-Type: application/fhir+xml" />
+            <arg value="-X" />
+            <arg value="PUT" />
+            <arg value="-d@fest-virkestoff-codesystem.xml" />
+            <arg value="http://localhost:8080/fhir/CodeSystem/FEST-Virkestoff" />
+        </exec>
+        <exec executable="curl">
+            <arg value="-v" />
+            <arg value="-H" />
+            <arg value="Content-Type: application/fhir+xml" />
+            <arg value="-X" />
+            <arg value="POST" />
+            <arg value="-d@fest-legemiddelmerkevare-medicationknowledge.xml" />
+            <arg value="http://localhost:8080/fhir" />
+        </exec>
+    </target>
+
+</project>
