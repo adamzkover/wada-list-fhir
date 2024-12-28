@@ -1,6 +1,8 @@
 fest/fest251.xml
 fest/fest251.zip
 fest/lib
+fest/fest-legemiddelmerkevare-medicationknowledge.xml
+fest/fest-virkestoff-codesystem.xml
 hapi/h2
 input/tests/results/*.txt
 input-cache
