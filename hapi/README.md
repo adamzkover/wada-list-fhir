@@ -7,3 +7,5 @@ Files in this directory can be used to test the Library $evaluate operation with
 1. Send the example parameters to the Library's $evaluate operation with `_libEvaluate.sh`
 
 The returned `<Parameters>` should have `issues` parameters with responses from groups S1 and S2.
+
+A simple tester front end app is served by the HAPI FHIR server. When the server is running, the app is available at `http://localhost:8080/web/app/index.html`.
