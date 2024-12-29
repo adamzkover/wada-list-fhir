@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationKnowledge xmlns="http://hl7.org/fhir">
+    <code>
+        <coding>
+            <system value="http://legemiddelverket.no/FEST/LegemiddelMerkevareID" />
+            <code value="ID_E39BF6EE-9A66-41FD-8806-C806CC28F0B3" />
+            <display value="Aspirin tab 500 mg" />
+        </coding>
+        <text value="Aspirin tab 500 mg" />
+    </code>
+    <ingredient>
+        <itemCodeableConcept>
+            <coding>
+                <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+                <code value="ID_433FABF6-968F-43D2-BF5E-CDC5546F0AB2" />
+                <display value="Acetylsalisylsyre" />
+            </coding>
+        </itemCodeableConcept>
+    </ingredient>
+</MedicationKnowledge>
