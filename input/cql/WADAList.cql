@@ -10,9 +10,26 @@ define "medications":
   [Medication] M
   return M
 
+define function getMedicationFhirCodings(Medications List<Medication>):
+  flatten(
+  [Medication] M
+  return M.code.coding)
+
+define function getMedicationSystemCodings(Codes List<Code>):
+  Codes fhirCode
+  return System.Code {
+    system: fhirCode.system,
+    code: fhirCode.code,
+    display: fhirCode.display
+  }
+
+define "medicationKnowledges":
+  [MedicationKnowledge: code.coding in getMedicationSystemCodings(getMedicationFhirCodings("medications"))] MK
+  return MK
+
 define "issues":
   flatten {
-    WADAListS1.GetIssues("medications"),
-    WADAListS2.GetIssues("medications"),
-    WADAListS3.GetIssues("medications")
+    WADAListS1.GetIssues("medications", "medicationKnowledges"),
+    WADAListS2.GetIssues("medications", "medicationKnowledges"),
+    WADAListS3.GetIssues("medications", "medicationKnowledges")
   }

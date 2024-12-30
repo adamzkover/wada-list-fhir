@@ -6,7 +6,7 @@ include WADAListCommon version '0.1.0' called WADAListCommon
 
 valueset S1Vs: 'https://folk.ntnu.no/adamzk/it6103/ValueSet/S1-FEST'
 
-define function GetIssues(Meds List<FHIR.Medication>):
-  WADAListCommon.GetIssues(Meds, S1Vs,
+define function GetIssues(Meds List<FHIR.Medication>, MedKnowledges List<FHIR.MedicationKnowledge>):
+  WADAListCommon.GetIssues(Meds, MedKnowledges, S1Vs,
     'S1', 'red', null,
     'https://www.antidoping.no/medisinsk/dopinglisten/dopinggruppe-s1')

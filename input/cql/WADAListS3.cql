@@ -10,21 +10,21 @@ valueset S3BVs: 'https://folk.ntnu.no/adamzk/it6103/ValueSet/S3B-FEST'
 valueset S3CVs: 'https://folk.ntnu.no/adamzk/it6103/ValueSet/S3C-FEST'
 valueset S3DVs: 'https://folk.ntnu.no/adamzk/it6103/ValueSet/S3D-FEST'
 
-define function GetIssues(Meds List<FHIR.Medication>):
+define function GetIssues(Meds List<FHIR.Medication>, MedKnowledges List<FHIR.MedicationKnowledge>):
   flatten({
-    WADAListCommon.GetIssues(Meds, S3Vs,
+    WADAListCommon.GetIssues(Meds, MedKnowledges, S3Vs,
       'S3', 'red', null,
       'https://www.antidoping.no/medisinsk/dopinglisten/dopinggruppe-s3'),
-    WADAListCommon.GetIssues(Meds, S3AVs,
+    WADAListCommon.GetIssues(Meds, MedKnowledges, S3AVs,
       'S3', 'yellow', 'Inhalert formoterol - maksimalt 54 mikrogram per 24 timer',
       'https://www.antidoping.no/medisinsk/dopinglisten/dopinggruppe-s3'),
-    WADAListCommon.GetIssues(Meds, S3BVs,
+    WADAListCommon.GetIssues(Meds, MedKnowledges, S3BVs,
       'S3', 'yellow', 'Inhalert salbutamol - maksimalt 1600 mikrogram per 24 timer fordelt på doser som til sammen ikke skal overskride 600 mikrogram i løpet av noen åttetimersperioder',
       'https://www.antidoping.no/medisinsk/dopinglisten/dopinggruppe-s3'),
-    WADAListCommon.GetIssues(Meds, S3CVs,
+    WADAListCommon.GetIssues(Meds, MedKnowledges, S3CVs,
       'S3', 'yellow', 'Inhalert salmeterol - maksimalt 200 mikrogram per 24 timer',
       'https://www.antidoping.no/medisinsk/dopinglisten/dopinggruppe-s3'),
-    WADAListCommon.GetIssues(Meds, S3DVs,
+    WADAListCommon.GetIssues(Meds, MedKnowledges, S3DVs,
       'S3', 'yellow', 'Inahlert vilanterol - maksimalt 25 mikrogram per 24 timer',
       'https://www.antidoping.no/medisinsk/dopinglisten/dopinggruppe-s3')
   })

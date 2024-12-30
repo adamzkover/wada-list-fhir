@@ -66,15 +66,20 @@ define function GetIssues(
 */
 
 define function GetIssues(
-    Medications List<FHIR.Medication>, VS System.ValueSet,
+    Medications List<FHIR.Medication>, MedicationKnowledges List<FHIR.MedicationKnowledge>, VS System.ValueSet,
     GroupCode String, Severity String, Comment String,
     URL String):
-  [MedicationKnowledge: ingredient.item.coding in VS] MK
+  MedicationKnowledges MK
     let
       matchingCodes: MK.code.coding intersect GetMedicationCodings(Medications)
-    where Count(matchingCodes) > 0
+    where MK.ingredient.item.coding in VS and Count(matchingCodes) > 0
     return DetectedIssue {
       status: DetectedIssueStatus  { value: 'final' },
+      severity: DetectedIssueSeverity { value: (case
+        when Severity = 'red' then 'high'
+        when Severity = 'yellow' then 'moderate'
+        else 'low'
+      end)},
       implicated: GetMedicationRefs(GetMatchingMedication(MK, Medications)),
       detail: string { value: GetMatchingIngredientDetails(MK, VS, GroupCode, Severity, Comment) },
       reference: uri { value: URL }

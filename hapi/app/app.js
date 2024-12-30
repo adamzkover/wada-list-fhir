@@ -40,6 +40,7 @@ function parseResponse(xmlString) {
             const medicationId = medicationReference ? medicationReference.split("/")[1] : null;
             if (medicationId) {
                 const issue = {
+                    severity: $detectedIssueResource.find("severity").attr("value"),
                     medicationId: medicationId,
                     detail: $detectedIssueResource.find("detail").attr("value"),
                     reference: $detectedIssueResource.find("reference").not("implicated > reference").attr("value")
@@ -55,22 +56,28 @@ function parseResponse(xmlString) {
 
     let extractedContent = "<h2>Detected Issues</h2>";
     $.each(medications, function (id, medication) {
-        extractedContent += `<h3>${medication.display || "Unknown Medication"}<br/><small>ID: ${medication.id}</small></h3>`;
+        extractedContent += `<div class="card mb-3"><div class="card-header"><h3 class="mb-0">${medication.display || "Unknown Medication"}<br/></h3></div><div class="card-body"><small>ID: ${medication.id}</small>`;
         if (medication.issues.length > 0) {
-            extractedContent += "<ul>";
             medication.issues.forEach(function (issue) {
-                extractedContent += `<li>${issue.detail || "No detail available"}`;
+                // Set alert color based on severity
+                let alertColor = "info";
+                if (issue.severity === "high") {
+                    alertColor = "danger";
+                } else if (issue.severity === "moderate") {
+                    alertColor = "warning";
+                }
+                extractedContent += `<div class="alert alert-${alertColor}"><b>${issue.detail || "No detail available"}</b><br/>`;
                 if (issue.reference) {
-                    extractedContent += ` (<a href="${issue.reference}" target="_blank">Reference</a>)`;
+                    extractedContent += ` (<a class="alert-link" href="${issue.reference}" target="_blank">Reference</a>)`;
                 } else {
                     extractedContent += ` (Reference: N/A)`;
                 }
-                extractedContent += `</li>`;
+                extractedContent += `</div>`;
             });
-            extractedContent += "</ul>";
         } else {
             extractedContent += "<p>No issues found for this medication.</p>";
         }
+        extractedContent += "</div></div>";
     });
     $("#extractedContent").html(extractedContent);
 
