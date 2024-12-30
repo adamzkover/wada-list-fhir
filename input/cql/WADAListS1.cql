@@ -8,4 +8,5 @@ valueset S1Vs: 'https://folk.ntnu.no/adamzk/it6103/ValueSet/S1-FEST'
 
 define function GetIssues(Meds List<FHIR.Medication>):
   WADAListCommon.GetIssues(Meds, S1Vs,
-    'S1', 'red', 'https://www.antidoping.no/medisinsk/dopinglisten/dopinggruppe-s1')
+    'S1', 'red', null,
+    'https://www.antidoping.no/medisinsk/dopinglisten/dopinggruppe-s1')

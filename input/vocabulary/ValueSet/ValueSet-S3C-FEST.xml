@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="S3C-FEST" />
+    <url value="https://folk.ntnu.no/adamzk/it6103/ValueSet/S3C-FEST" />
+    <name value="S3CFest" />
+    <title value="S3C FEST" />
+    <status value="draft" />
+    <experimental value="true" />
+    <description value="FEST codes for substances included in section S3 of the List, with comments ***." />
+    <expansion>
+        <timestamp value="2024-07-18" />
+        <!-- salmeterol*** -->
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_D498B01D-5C30-4481-8A69-CEE079047FF0" />
+            <display value="Salmeterol" />
+        </contains>
+        <contains>
+            <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+            <code value="ID_007F16A7-7FED-4C4C-B29E-2BC6236164A6" />
+            <display value="Salmeterolxinafoat" />
+        </contains>
+    </expansion>
+</ValueSet>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationKnowledge xmlns="http://hl7.org/fhir">
+    <code>
+        <coding>
+            <system value="http://legemiddelverket.no/FEST/LegemiddelMerkevareID" />
+            <code value="ID_12F7090C-77E7-415E-A1D1-A7F921F8BFCC" />
+            <display value="Berotec N inh aerosol, oppl 100 mikrog/dose" />
+        </coding>
+        <text value="Berotec N inh aerosol, oppl 100 mikrog/dose" />
+    </code>
+    <ingredient>
+        <itemCodeableConcept>
+            <coding>
+                <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+                <code value="ID_E39E379F-14FC-4F16-AF6E-D0A16B3082FF" />
+                <display value="Fenoterol" />
+            </coding>
+        </itemCodeableConcept>
+    </ingredient>
+</MedicationKnowledge>

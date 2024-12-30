@@ -1,0 +1,11 @@
+<Medication xmlns="http://hl7.org/fhir">
+    <id value="MedicationS3" />
+    <code>
+        <coding>
+            <system value="http://legemiddelverket.no/FEST/LegemiddelMerkevareID" />
+            <code value="ID_12F7090C-77E7-415E-A1D1-A7F921F8BFCC" />
+            <display value="Berotec N inh aerosol, oppl 100 mikrog/dose" />
+        </coding>
+        <text value="Berotec N inh aerosol, oppl 100 mikrog/dose" />
+    </code>
+</Medication>

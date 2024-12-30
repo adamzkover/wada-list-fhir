@@ -1,0 +1,11 @@
+<Medication xmlns="http://hl7.org/fhir">
+    <id value="MedicationS3A" />
+    <code>
+        <coding>
+            <system value="http://legemiddelverket.no/FEST/LegemiddelMerkevareID" />
+            <code value="ID_D9C1E2C0-F6A0-4582-B7D1-557BA0C3A95E" />
+            <display value="Symbicort Turbuhaler inh pulv 160 mikrog/dose/4,5 mikrog/dose" />
+        </coding>
+        <text value="Symbicort Turbuhaler inh pulv 160 mikrog/dose/4,5 mikrog/dose" />
+    </code>
+</Medication>

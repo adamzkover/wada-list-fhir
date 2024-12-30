@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationKnowledge xmlns="http://hl7.org/fhir">
+    <code>
+        <coding>
+            <system value="http://legemiddelverket.no/FEST/LegemiddelMerkevareID" />
+            <code value="ID_D9C1E2C0-F6A0-4582-B7D1-557BA0C3A95E" />
+            <display value="Symbicort Turbuhaler inh pulv 160 mikrog/dose/4,5 mikrog/dose" />
+        </coding>
+        <text value="Symbicort Turbuhaler inh pulv 160 mikrog/dose/4,5 mikrog/dose" />
+    </code>
+    <ingredient>
+        <itemCodeableConcept>
+            <coding>
+                <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+                <code value="ID_3E0AC797-42FC-41AF-B0B1-0E202B519C01" />
+                <display value="Budesonid" />
+            </coding>
+        </itemCodeableConcept>
+        <itemCodeableConcept>
+            <coding>
+                <system value="http://legemiddelverket.no/FEST/VirkestoffID" />
+                <code value="ID_3B1217F1-B76E-48ED-B09A-C24DB2463414" />
+                <display value="Formoterol" />
+            </coding>
+        </itemCodeableConcept>
+    </ingredient>
+</MedicationKnowledge>

@@ -101,10 +101,45 @@
         </designation>
     </concept>
     <concept>
+        <code value="ID_E39E379F-14FC-4F16-AF6E-D0A16B3082FF" />
+        <designation>
+            <language value="no" />
+            <value value="Fenoterol" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_9FDA4BF7-4B44-4566-94FA-B4ACED4DF471" />
+        <designation>
+            <language value="no" />
+            <value value="Fenoterolhydrobromid" />
+        </designation>
+    </concept>
+    <concept>
         <code value="ID_9CAAEE37-6210-4157-BF5D-E74A363B739E" />
         <designation>
             <language value="no" />
             <value value="Fluoksymesteron" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_3B1217F1-B76E-48ED-B09A-C24DB2463414" />
+        <designation>
+            <language value="no" />
+            <value value="Formoterol" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_1BEE9746-4C2A-4FC9-A658-8B7FFFA5B543" />
+        <designation>
+            <language value="no" />
+            <value value="Formoterolfumaratdihydrat" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_6D1B5E86-668E-4E9C-867F-C0E266AD049C" />
+        <designation>
+            <language value="no" />
+            <value value="Formoterolfumarat" />
         </designation>
     </concept>
     <concept>
@@ -133,6 +168,27 @@
         <designation>
             <language value="no" />
             <value value="Histrelin" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_BB1D8766-CE53-4D10-A6D1-5709D8206987" />
+        <designation>
+            <language value="no" />
+            <value value="Indakaterol" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_C1271956-492A-4606-A4BB-564A56E62576" />
+        <designation>
+            <language value="no" />
+            <value value="Indakaterolacetat" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_B536B62C-090F-4926-9279-6B5DA3B905B7" />
+        <designation>
+            <language value="no" />
+            <value value="Indakaterolmaleat" />
         </designation>
     </concept>
     <concept>
@@ -346,6 +402,20 @@
         </designation>
     </concept>
     <concept>
+        <code value="ID_43AFDCA6-1F74-46FF-ADD7-E7EDFD078ABA" />
+        <designation>
+            <language value="no" />
+            <value value="Olodaterol" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_B07F04B4-5DC3-4FA7-8C9F-86A17D0AF73B" />
+        <designation>
+            <language value="no" />
+            <value value="Olodaterolhydroklorid" />
+        </designation>
+    </concept>
+    <concept>
         <code value="ID_6005F3CF-B2C0-4283-A3B9-92A40DBB4576" />
         <designation>
             <language value="no" />
@@ -367,10 +437,52 @@
         </designation>
     </concept>
     <concept>
+        <code value="ID_4629F282-2686-495E-9FD4-8F898205B7AA" />
+        <designation>
+            <language value="no" />
+            <value value="Prokaterol" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_015316A1-D184-4CAA-AE21-367B30B2CE19" />
+        <designation>
+            <language value="no" />
+            <value value="Reproterol" />
+        </designation>
+    </concept>
+    <concept>
         <code value="ID_10BCE261-08EE-4E26-B38B-1DB0F7FBFA2D" />
         <designation>
             <language value="no" />
             <value value="Roksadustat" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_4A5A0004-7069-4408-9248-0621DD4FB602" />
+        <designation>
+            <language value="no" />
+            <value value="Salbutamol" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_F72C98DC-CBCD-4DAE-9838-C1D4B11C1274" />
+        <designation>
+            <language value="no" />
+            <value value="Salbutamolsulfat" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_D498B01D-5C30-4481-8A69-CEE079047FF0" />
+        <designation>
+            <language value="no" />
+            <value value="Salmeterol" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_007F16A7-7FED-4C4C-B29E-2BC6236164A6" />
+        <designation>
+            <language value="no" />
+            <value value="Salmeterolxinafoat" />
         </designation>
     </concept>
     <concept>
@@ -420,6 +532,20 @@
         <designation>
             <language value="no" />
             <value value="Stanozolol" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_A9E21894-A0DB-4596-A6F0-1737A3F66384" />
+        <designation>
+            <language value="no" />
+            <value value="Terbutalin" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_BE714639-52CB-4B84-AA85-C2BB54CB3BA6" />
+        <designation>
+            <language value="no" />
+            <value value="Terbutalinsulfat" />
         </designation>
     </concept>
     <concept>
@@ -479,10 +605,31 @@
         </designation>
     </concept>
     <concept>
+        <code value="ID_D10B28BE-DB51-496D-8ECA-509F6510BAC5" />
+        <designation>
+            <language value="no" />
+            <value value="Tulobuterol" />
+        </designation>
+    </concept>
+    <concept>
         <code value="ID_69F05FE6-0AA5-49B8-A080-2A6028C368A7" />
         <designation>
             <language value="no" />
             <value value="Vadadustat" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_08D71B90-E20A-4A79-8DBB-76CCBA93109D" />
+        <designation>
+            <language value="no" />
+            <value value="Vilanterol" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="ID_383EB27C-191E-4749-A37B-0F522FA0CAAF" />
+        <designation>
+            <language value="no" />
+            <value value="Vilanteroltrifenatat" />
         </designation>
     </concept>
     <concept>

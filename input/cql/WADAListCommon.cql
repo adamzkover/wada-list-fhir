@@ -18,12 +18,12 @@ define function GetMatchingMedication(
   where Count(M.code.coding intersect MK.code.coding) > 0
   return M
 
-define function GetMatchingIngredients(
+define function GetMatchingIngredientDetails(
     MK MedicationKnowledge,
     VS System.ValueSet,
     GroupCode System.String,
-    Severity System.String):
-  MK.code.text + ': ' +
+    Severity System.String,
+    Comment System.String):
   Combine(
     MK.ingredient Ing
     where Ing.item.coding in VS
@@ -34,7 +34,12 @@ define function GetMatchingIngredients(
       when Severity = 'yellow' then 'forbudt iht. WADAs dopingliste, med visse unntak/restriksjoner'
       else 'Ukjent'
     end
-  ) + ' (' + GroupCode + ')'
+  ) + ' (' + GroupCode + ')' + (
+    case
+      when Comment is not null then ' - ' + Comment
+      else ''
+    end
+  )
 
 define function GetMedicationRefs(
     Medications List<FHIR.Medication>):
@@ -61,9 +66,9 @@ define function GetIssues(
 */
 
 define function GetIssues(
-    Medications List<FHIR.Medication>,
-    VS System.ValueSet,
-    GroupCode String, Severity String, URL String):
+    Medications List<FHIR.Medication>, VS System.ValueSet,
+    GroupCode String, Severity String, Comment String,
+    URL String):
   [MedicationKnowledge: ingredient.item.coding in VS] MK
     let
       matchingCodes: MK.code.coding intersect GetMedicationCodings(Medications)
@@ -71,6 +76,6 @@ define function GetIssues(
     return DetectedIssue {
       status: DetectedIssueStatus  { value: 'final' },
       implicated: GetMedicationRefs(GetMatchingMedication(MK, Medications)),
-      detail: string { value: GetMatchingIngredients(MK, VS, GroupCode, Severity) },
+      detail: string { value: GetMatchingIngredientDetails(MK, VS, GroupCode, Severity, Comment) },
       reference: uri { value: URL }
     }
