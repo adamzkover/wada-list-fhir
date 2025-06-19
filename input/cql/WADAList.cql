@@ -10,13 +10,13 @@ define "medications":
   [Medication] M
   return M
 
-define function getMedicationFhirCodings(Medications List<Medication>):
-  flatten(
-  [Medication] M
-  return M.code.coding)
-
-define function getMedicationSystemCodings(Codes List<Code>):
-  Codes fhirCode
+define function getMedicationCodes(Medications List<Medication>):
+  distinct(
+    flatten(
+      [Medication] M
+      return M.code.coding
+    )
+  ) fhirCode
   return System.Code {
     system: fhirCode.system,
     code: fhirCode.code,
@@ -24,8 +24,10 @@ define function getMedicationSystemCodings(Codes List<Code>):
   }
 
 define "medicationKnowledges":
-  [MedicationKnowledge: code.coding in getMedicationSystemCodings(getMedicationFhirCodings("medications"))] MK
-  return MK
+  flatten(
+    (getMedicationCodes("medications")) fhirCode
+    return [MedicationKnowledge] MK where MK.code ~ fhirCode
+  )
 
 define "issues":
   flatten {
